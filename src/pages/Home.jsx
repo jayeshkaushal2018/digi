@@ -14,8 +14,8 @@ function Home() {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-sm-6 d-flex d-sm-block flex-column align-items-center'>
-                            <h2 className='mb-0 text-black fw-bold'>Welcome To</h2>
-                            <h1 className='mb-5 text-black fw-bold text-center text-sm-start'>DigiView an Events Manager & Net</h1>
+                            {/* <h2 className='mb-0 text-black fw-bold'>Welcome To</h2> */}
+                            <h1 className='mb-5 text-black fw-bold text-center text-sm-start'>DigiView an Events Manager APP</h1>
                             <MenuBtn />
                         </div>
                     </div>
@@ -47,15 +47,12 @@ function Home() {
                             <ul className='px-0'>
                                 <li className='d-flex justify-content-between'>
                                     <p className='fs-3 mx-2'>English Breakfast</p>
-                                    <p className='fs-3 mx-2 text-success fw-nold'>£12</p>
                                 </li>
                                 <li className='d-flex justify-content-between'>
                                     <p className='fs-3 mx-2'>Spicy Beef</p>
-                                    <p className='fs-3 mx-2 text-success fw-nold'>£15</p>
                                 </li>
                                 <li className='d-flex justify-content-between'>
                                     <p className='fs-3 mx-2'>Saghetti Bolognese</p>
-                                    <p className='fs-3 mx-2 text-success fw-nold'>£11</p>
                                 </li>
                             </ul>
                         </div>
@@ -64,28 +61,25 @@ function Home() {
                             <ul className='px-0'>
                                 <li className='d-flex justify-content-between'>
                                     <p className='fs-3 mx-2'>Coffee</p>
-                                    <p className='fs-3 mx-2 text-success fw-nold'>£2</p>
                                 </li>
                                 <li className='d-flex justify-content-between'>
                                     <p className='fs-3 mx-2'>Juice</p>
-                                    <p className='fs-3 mx-2 text-success fw-nold'>£1</p>
                                 </li>
                                 <li className='d-flex justify-content-between'>
                                     <p className='fs-3 mx-2'>Spirits</p>
-                                    <p className='fs-3 mx-2 text-success fw-nold'>£5</p>
                                 </li>
                             </ul>
                         </div>
                     </div> */}
-                    <div className='row mb-5 w-100'>
+                    <div className='row mb-5 w-100'> 
                         <div className='col-lg-6 d-flex flex-column align-items-center mb-5 mb-lg-0'>
                             <ul className='px-0'>
                                 <li className='d-flex justify-content-between'>
                                     <p className='fs-3 mx-2'>A powerful and centralized platform with the tools and processes you need to manage all aspects of your events, from start to finish.</p>
                                 </li>
-                                <li> 
+                                {/* <li> 
                                 <MenuBtn />
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
@@ -94,6 +88,9 @@ function Home() {
                 </div>
             </div>
 
+            <div className='menu-section py-5 text-light shadow'>
+                
+            </div>
             <ImageGallery />
 
             <div className='bg-dark text-light py-5 shadow'>

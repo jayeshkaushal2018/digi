@@ -5,7 +5,7 @@ export function MenuBtn() {
     return (
         <div>
             <Link to="/menu">
-                <button type="button" className="btn btn-success btn-lg">Our blog</button>
+                <button type="button" className="btn btn-primary btn-lg">Our blog</button>
             </Link>
         </div>
     )

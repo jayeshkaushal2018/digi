@@ -19,25 +19,36 @@ function App() {
       <Navbar expand="lg" className='fixed-top bg-body-tertiary shadow'>
         <Container>
           <Navbar.Brand>
-            <Link to="/" className='navbar-brand text-success fw-semibold'>
-            {/* <img src={DigiviewLogo} className="img-fluid" alt="" /> */}
+            <Link to="/" className='navbar-brand text-primary fw-semibold'>
+            {/* <img src={DigiviewLogo} className="img-fluid" alt="" width="30" height="40"/> */}
             DigiView
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='me-auto justify-content-end w-100'>
-              <Nav.Link href='/' className='active text-uppercase'>Home</Nav.Link>
-              <Nav.Link href='/menu' className='text-uppercase'>Blog</Nav.Link>
-              <Nav.Link href='/about' className='text-uppercase'>About</Nav.Link>
-              <Nav.Link href='/contact' className='text-uppercase'>Contact</Nav.Link>
-              <div className='headerBtns flex'>
-                        <button className='btn loginBtn'>
-                            <a href="LoginSignUp">Login/Sign Up</a>
-                        </button >
-                </div>
+            <Nav className='me-auto justify-content-center w-100'>
+              <div className='dropdown'>
+              <Nav.Link href='/' className='active text-uppercase'><b>Products</b></Nav.Link>
+              <div className='dropdown-content'>
+                <a href='#'>link1</a>
+                <a herf="#">Link2</a>
+                <a herf="#">Link3</a>
+              </div>
+              </div>
+              <Nav.Link href='/menu' className='text-uppercase'><b>Blog</b></Nav.Link>
+              <Nav.Link href='/about' className='text-uppercase'><b>About</b></Nav.Link>
+              <Nav.Link href='/contact' className='text-uppercase'><b>Contact</b></Nav.Link>
             </Nav>
           </Navbar.Collapse>
+          {/* <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='me-auto justify-content-center w-100'>
+            <div className='headerBtns flex'>
+                <button className='btn loginBtn'>
+                    <a href="LoginSignUp">Login/Sign Up</a>
+                </button >
+            </div>
+            </Nav>
+          </Navbar.Collapse> */}
         </Container>
       </Navbar>
 
