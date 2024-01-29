@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.btn{
+  padding: .4rem 1.5rem;
+  background: blue;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.btn a{
+  color: var(--WhiteColor);
+  font-weight: 500;
+}
+
+.btn:hover a{
+  color: var(--WhiteColor);
+}
