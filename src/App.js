@@ -12,6 +12,7 @@ import Signup from './components/LoginSignup/Signup';
 import DigiviewLogo from '../src/pages/digiviewLogo.webp';
 import EventDetails from './pages/EventDetails/EventDetails';
 import FilterEvents from './pages/FilterEvents/FilterEvents';
+import Blog from './pages/Blog';
 import EventList from './pages/EventList/EventList';
 import Products from './pages/Products';
 import Login from './components/LoginSignup/Login';
@@ -42,12 +43,12 @@ function App() {
                 <a herf="#">Link3</a>
               </div>
               </div>
-              <Nav.Link href='/menu' className='text-uppercase'><b>Blog</b></Nav.Link>
+              <Nav.Link href='/blog' className='text-uppercase'><b>Blog</b></Nav.Link>
               <Nav.Link href='/about' className='text-uppercase'><b>About</b></Nav.Link>
               <Nav.Link href='/contact' className='text-uppercase'><b>Contact</b></Nav.Link>
               
-            { path == '/login' ? <Link to="/login">       
-      <button class="btn btn-primary " style={{"margin-left":500 }} type="submit">Login</button>
+            { path != '/login' ? <Link to="/login">       
+      <button class="btn btn-primary " style={{"margin-left":500, "width":160 ,"border-radius": 2}} type="submit"><b>Login</b></button>
 </Link> :<></>}
               <form class="form-inline">
     
@@ -68,7 +69,8 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/menu' element={<Menu />} />
+        {/* <Route path='/menu' element={<Menu />} /> */}
+        <Route path='/blog' element={<Blog />}/>
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         {/* <Route path='/LoginSignUp' element={<LoginSignUp/>} /> */}
