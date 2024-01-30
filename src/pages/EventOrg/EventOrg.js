@@ -4,9 +4,14 @@ import EventList from '../EventList/EventList'
 import {useNavigate} from "react-router-dom"
 import {useState, useEffect} from "react";
 function EventOrg() {
-  
+  const navigate  = useNavigate();
+  useEffect(()=>{
+    if(localStorage.getItem('token')){
+    navigate('/login')
+  }
     
-  
+  },[])
+
   return (
     <>
       <Sidebar/>
