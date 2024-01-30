@@ -31,9 +31,12 @@ function Home() {
                         <h2 className='fs-1 mb-5 text-uppercase fw-bold'>About Us</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident voluptate aut dolore ullam quasi numquam quod molestias cum officiis perspiciatis?</p>
                         <p className='mb-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab magni animi tenetur eaque vel accusamus placeat quaerat ad. Similique quaerat qui doloribus assumenda deserunt tenetur quas suscipit officiis quod sequi?</p>
-                        <Link to="/about">
+                        {/* <Link to="/about">
                             <button type='button' className='btn btn-outline-success btn-lg'>More About Us</button>
-                        </Link>
+                        </Link> */}
+                        <Link to="/about">
+                <button type="button" className="btn btn-primary btn-lg" style={{width:200}}><b>More About Us</b></button>
+            </Link>
                     </div>
                 </div>
             </div>

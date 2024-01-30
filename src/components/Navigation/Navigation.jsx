@@ -5,11 +5,12 @@ const Navigation = ()=>{
     <nav>
         <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/eventOrg">Home</Link>
             </li>
             <li>
               <Link to="/find-events">Find Events</Link>
             </li>
+            
         </ul>
     </nav>
   )

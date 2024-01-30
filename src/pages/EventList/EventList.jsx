@@ -21,7 +21,7 @@ const EventList = () => {
     <div>
       <Navigation/>
       <div className="event-list-wrapper">
-        <div className="event-list">
+        <div className="event-list" >
           {eventList.length > 0 ? (
             renderEventCards()
           ) : (

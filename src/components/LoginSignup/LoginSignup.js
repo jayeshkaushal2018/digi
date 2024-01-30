@@ -4,6 +4,7 @@ import User_icon from "../../pages/person.png";
 import email_icon from "../../pages/email.png";
 import password_icon from "../../pages/password.png";
 import { useState } from "react";
+
 const LoginSignUp = () => {
     const [action,setAction] = useState("Sign Up");
   return (

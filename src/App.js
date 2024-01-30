@@ -7,16 +7,23 @@ import Home from './pages/Home';
 import Menu from './pages/Menu';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import LoginSignUp from './components/LoginSignup/LoginSignup';
+// import LoginSignUp from './components/LoginSignup/LoginSignup';
+import Signup from './components/LoginSignup/Signup';
 import DigiviewLogo from '../src/pages/digiviewLogo.webp';
 import EventDetails from './pages/EventDetails/EventDetails';
 import FilterEvents from './pages/FilterEvents/FilterEvents';
 import EventList from './pages/EventList/EventList';
-
+import Products from './pages/Products';
+import Login from './components/LoginSignup/Login';
+import EventOrg from './pages/EventOrg/EventOrg';
+import Sidebar from './components/SideBar/Sidebar';
+import { useLocation } from 'react-router-dom';
 function App() {
+  const location = useLocation();
+  const path = location.path;
   return (
     <div>
-      <Navbar expand="lg" className='fixed-top bg-body-tertiary shadow'>
+      <Navbar expand="lg" className='fixed-top bg-body-tertiary '>
         <Container>
           <Navbar.Brand>
             <Link to="/" className='navbar-brand text-primary fw-semibold'>
@@ -28,7 +35,7 @@ function App() {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-center w-100'>
               <div className='dropdown'>
-              <Nav.Link href='/' className='active text-uppercase'><b>Products</b></Nav.Link>
+              <Nav.Link href='/products' className='active text-uppercase'><b>Products</b></Nav.Link>
               <div className='dropdown-content'>
                 <a href='#'>link1</a>
                 <a herf="#">Link2</a>
@@ -38,6 +45,13 @@ function App() {
               <Nav.Link href='/menu' className='text-uppercase'><b>Blog</b></Nav.Link>
               <Nav.Link href='/about' className='text-uppercase'><b>About</b></Nav.Link>
               <Nav.Link href='/contact' className='text-uppercase'><b>Contact</b></Nav.Link>
+              
+            { path == '/login' ? <Link to="/login">       
+      <button class="btn btn-primary " style={{"margin-left":500 }} type="submit">Login</button>
+</Link> :<></>}
+              <form class="form-inline">
+    
+  </form>
             </Nav>
           </Navbar.Collapse>
           {/* <Navbar.Collapse id='basic-navbar-nav'>
@@ -57,10 +71,14 @@ function App() {
         <Route path='/menu' element={<Menu />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/LoginSignUp' element={<LoginSignUp/>} />
+        {/* <Route path='/LoginSignUp' element={<LoginSignUp/>} /> */}
         <Route path='/list' element={<EventList/>} />
         <Route path='/find-events'element={<FilterEvents/>} />
         <Route path= '/events/:id'element={<EventDetails/>} />
+        <Route path='/products' element={<Products/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/eventOrg' element={<EventOrg/>} />
+        <Route path='/signup' element={<Signup/>} />
       </Routes>
 
       <footer className='bg-body-tertiary'>
