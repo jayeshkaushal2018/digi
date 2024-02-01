@@ -84,7 +84,9 @@ const LoginSignUp = () => {
       </div>}
       
       <div className="submit-container">
+      <Link to ={`/signup`}>
         <div className={action==="Login"?"submit gray":"submit"}> Submit</div>
+        </Link>
         <div className={action==="Sign Up"?"submit gray":"submit"}  onClick={handleApi}> Login</div>
       </div>
     </div>

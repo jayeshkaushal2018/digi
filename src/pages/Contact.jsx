@@ -55,7 +55,7 @@ function Contact() {
                                 <Form.Control type='textarea' id='comments' />
                             </Form.Group>
 
-                            <button type='submit' className='btn btn-success btn-lg'>Submit</button>
+                            <button type='submit' className='btn btn-primary btn-lg'>Submit</button>
                         </Form>
                     </div>
                 </div>

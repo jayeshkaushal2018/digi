@@ -71,6 +71,16 @@ function Signup() {
             />
         </div>
         <div className="input">
+          <img src={User_icon} alt="" />
+          {/* <input type="email" placeholder="Email" /> */}
+          <input
+              type="text"
+              value="please enter the name"
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="UserName"
+            />
+        </div>
+        <div className="input">
           <img src={password_icon} alt="" />
           {/* <input type="password" placeholder="Password" /> */}
           <input
@@ -87,7 +97,9 @@ function Signup() {
       
       <div className="submit-container">
         <div className={action==="Login"?"submit gray":"submit"}> Submit</div>
+        <Link to ={`/login`}>
         <div className={action==="SignUp"?"submit gray":"submit"}  onClick={handleApi}> Login</div>
+        </Link>
       </div>
     </div>
   );

@@ -17,6 +17,7 @@ import EventList from './pages/EventList/EventList';
 import Products from './pages/Products';
 import Login from './components/LoginSignup/Login';
 import EventOrg from './pages/EventOrg/EventOrg';
+import Event from './pages/Event';
 import Sidebar from './components/SideBar/Sidebar';
 import { useLocation } from 'react-router-dom';
 function App() {
@@ -36,14 +37,16 @@ function App() {
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-center w-100'>
               <div className='dropdown'>
-              <Nav.Link href='/products' className='active text-uppercase'><b>Products</b></Nav.Link>
-              <div className='dropdown-content'>
-                <a href='#'>link1</a>
-                <a herf="#">Link2</a>
-                <a herf="#">Link3</a>
+              <Nav.Link href='/' className='active text-uppercase'><b>Products</b></Nav.Link>
+              <div className='dropdown-content'  >
+                
+                <a href='#'>Pre-Event</a>
+                <a herf="#">During-Event</a>
+                <a herf="#">Pre-Event</a>
               </div>
               </div>
               <Nav.Link href='/blog' className='text-uppercase'><b>Blog</b></Nav.Link>
+              <Nav.Link href='/eventOrg' className='text-uppercase'><b>EventS</b></Nav.Link>
               <Nav.Link href='/about' className='text-uppercase'><b>About</b></Nav.Link>
               <Nav.Link href='/contact' className='text-uppercase'><b>Contact</b></Nav.Link>
               
@@ -81,6 +84,7 @@ function App() {
         <Route path='/login' element={<Login/>} />
         <Route path='/eventOrg' element={<EventOrg/>} />
         <Route path='/signup' element={<Signup/>} />
+        <Route path ='/event' element={<Event/>} />
       </Routes>
 
       <footer className='bg-body-tertiary'>
